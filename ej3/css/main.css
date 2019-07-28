@@ -25,3 +25,12 @@
     margin: 20px auto;
     color:tomato;
 }
+.page__main{
+    padding:10px;
+    background-color: pink;
+}
+input{
+    display:block;
+    padding: 10px;
+    margin:5px;
+}

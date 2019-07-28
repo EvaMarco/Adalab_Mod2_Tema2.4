@@ -1,18 +1,12 @@
 'use strict';
 
+const input = document.querySelector('.input');
 
-const valorA = (prompt('Introduce el elemento a seleccionar entre: .header__title, .title, .text, .text2 o .subtitle'));
-
-
-
-function getEl(a){
-
-    const element = document.querySelector(a);
-    return element;
-    
+function getEl(event){
+    const element = event.currentTarget.value;
+    const choose = document.querySelector(element);
+    choose.classList.add('resultado');
+    choose.innerHTML = `El elemento ha sido seleccionado  🦊️`; 
 }
 
-const operation = getEl(valorA);
-
-operation.classList.add('resultado');
-operation.innerHTML = `El elemento ha sido seleccionado  🦊️`;
+input.addEventListener('change', getEl);

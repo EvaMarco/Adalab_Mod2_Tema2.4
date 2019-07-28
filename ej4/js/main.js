@@ -1,26 +1,19 @@
 'use strict';
 
-
-const valorA = parseFloat(prompt('Introduce un número y te diré si es par o impar'));
-
-
+const valorA = document.querySelector('.num1');
 const resultado = document.querySelector('.resultado');
 
-function even(a){
-    const compr = a % 2 ;
-    
+function even(event){
+    const a = parseFloat(valorA.value);
+    const compr = a % 2 ;    
     if (compr === 0){
-        const result = 'El número es par';
-        return result;
+        const operation = 'El número es par';
+        resultado.innerHTML = operation;
     }
     else{
-        const result = 'El número es impar';
-        return result;
-    }
-    
+        const operation = 'El número es impar';
+        resultado.innerHTML = operation;
+    }   
 }
 
-
-const operation = even(valorA);
-
-resultado.innerHTML = operation;
+valorA.addEventListener('change', even);
