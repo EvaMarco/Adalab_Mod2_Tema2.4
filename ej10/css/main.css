@@ -4,24 +4,42 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #454545;
 }
-.title{
-    
+.title{  
     padding:10px;
     border-bottom: 1px solid #454545;
 }
-
 .ex-link{
     padding:10px;
     margin-top: 10px;
     text-decoration: none;
     display: inline-block;
-
 }
 .header{
     background-color: #cccccc;
 }
-
 .resultado{
     margin: 20px auto;
     color:tomato;
+}
+.page__main{
+    padding:10px;
+    background-color: pink;
+}
+input{
+    display:block;
+    padding: 10px;
+    margin:5px;
+}
+.box{
+    background-color:green;
+    height:40px;
+    display:inline-block;
+    border-style: solid;
+    border-color: black;
+}
+.border{
+    box-sizing: border-box;
+}
+.content{
+    box-sizing: content-box;
 }
